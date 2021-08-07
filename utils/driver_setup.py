@@ -9,7 +9,7 @@ class DriverSetup():
 
     @classmethod
     def setUpClass(cls):
-        DRIVER_PATH = os.getenv('DRIVER_PATH', '/Library/ChromeDriver/chromedriver')
+        DRIVER_PATH = os.getenv('DRIVER_PATH', '../data/chromedriver')
         cls.driver = webdriver.Chrome(
             '/Library/ChromeDriver/chromedriver')
         cls.wait = WebDriverWait(cls.driver, 4)
