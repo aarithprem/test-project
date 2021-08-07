@@ -32,6 +32,9 @@ class GitHubTests(DriverSetup, SeleniumUtils, AppUtils):
         read_me_content = self.get_read_me_text()
 
         # printing first 300 characters
-        print(read_me_content[:300])
+        if len(read_me_content) == 0:
+            print("No content present")
+        else:
+            print(read_me_content[:300])
 
 
