@@ -14,4 +14,4 @@ pip install nose
 To run tests:
 -------------
 
-nosetests -v tests/github_tests.py
+nosetests -v tests/github_tests.py:GitHubTests
